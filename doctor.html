@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dr. Maria Santos, MD</title>
+<meta name="description" content="Internal Medicine. Clinic schedule, appointments, and contact details.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<style>
+:root{--page:#F3F7F8;--card:#FFFFFF;--ink:#1E2B36;--head:#12304A;--muted:#5A6B78;--line:#D8E3E7;--accent:#2F7D73;--accent-ink:#2F7D73;--btn:#12304A;--btn-ink:#FFFFFF;--r:14px;--display:'DM Serif Display',Georgia,serif;--display-w:400;--body:Manrope,system-ui,-apple-system,'Segoe UI',sans-serif}
+
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{font-family:var(--body);background:var(--page);color:var(--ink);line-height:1.55}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.wrap{max-width:480px;margin:0 auto;min-height:100vh;background:var(--page);padding-bottom:env(safe-area-inset-bottom,0px)}
+.save{display:flex;align-items:center;justify-content:center;gap:10px;margin:20px 20px 0;padding:16px;border-radius:var(--r);background:var(--btn);color:var(--btn-ink);text-decoration:none;font-weight:700;font-size:1.02rem}
+.actions{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;padding:12px 20px 0}
+.actions a{display:flex;flex-direction:column;align-items:center;gap:6px;padding:14px 2px 12px;background:var(--card);border:1px solid var(--line);border-radius:var(--r);text-decoration:none;font-size:.76rem;font-weight:600}
+.actions i{font-size:1.2rem;color:var(--accent-ink)}
+section{padding:36px 20px 0}
+h2{font-family:var(--display);font-weight:var(--display-w);font-size:1.55rem;line-height:1.15;margin-bottom:12px;color:var(--head)}
+.lead{color:var(--muted);margin:-4px 0 14px;font-size:.95rem}
+.box{background:var(--card);border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
+.list{list-style:none}
+.list li{display:flex;justify-content:space-between;gap:14px;padding:13px 16px;font-size:.95rem}
+.list li+li{border-top:1px solid var(--line)}
+.list li span:last-child{text-align:right;font-weight:600}
+.list small{display:block;color:var(--muted);font-size:.8rem;font-weight:400}
+.contacts{list-style:none}
+.contacts a{display:flex;align-items:center;gap:14px;padding:14px 16px;text-decoration:none}
+.contacts li+li{border-top:1px solid var(--line)}
+.contacts i{width:22px;text-align:center;font-size:1.1rem;color:var(--accent-ink)}
+.contacts small{display:block;color:var(--muted);font-size:.78rem}
+.map{width:100%;height:210px;border:0;border-radius:var(--r);background:var(--line);display:block}
+.directions{display:inline-block;margin-top:10px;font-weight:700;color:var(--accent-ink)}
+.address{margin-bottom:12px}
+.tags{display:flex;flex-wrap:wrap;gap:8px}
+.tags span{padding:7px 12px;border-radius:999px;background:var(--card);border:1px solid var(--line);font-size:.86rem;font-weight:600}
+footer{padding:40px 20px 30px;text-align:center;font-size:.8rem;color:var(--muted)}
+.sample{display:inline-block;margin-top:8px;padding:5px 12px;border-radius:999px;border:1px dashed var(--muted);font-weight:600}
+p{max-width:65ch}
+
+
+.hero{background:#12304A;color:#fff;padding:calc(34px + env(safe-area-inset-top,0px)) 24px 30px}
+.mark{width:84px;height:84px;border-radius:50%;background:#EAF4F2;color:#12304A;display:grid;place-items:center;font-family:var(--display);font-size:2rem;margin-bottom:18px}
+.hero h1{font-family:var(--display);font-weight:400;font-size:2.2rem;line-height:1.05}
+.hero .role{margin-top:8px;color:#9FD3CA;font-weight:600}
+.hero .aff{margin-top:2px;color:#C5D3DE;font-size:.92rem}
+.week{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:6px}
+.day{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 4px;text-align:center;font-size:.78rem}
+.day b{display:block;font-size:.85rem;margin-bottom:4px}
+.day.on{background:#12304A;border-color:#12304A;color:#fff}
+.day.on span{color:#9FD3CA}
+.legend{margin-top:12px}
+
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="hero">
+<div class="mark" aria-hidden="true">MS</div>
+<h1>Dr. Maria Santos, MD</h1>
+<p class="role">Internal Medicine</p>
+<p class="aff">Fellow, Philippine College of Physicians</p>
+</header>
+<a class="save" href="data:text/vcard;base64,QkVHSU46VkNBUkQNClZFUlNJT046My4wDQpOOlNhbnRvcztNYXJpYTs7Ow0KRk46RHIuIE1hcmlhIFNhbnRvc1wsIE1EDQpPUkc6SW50ZXJuYWwgTWVkaWNpbmUgQ2xpbmljDQpUSVRMRTpJbnRlcm5pc3QNClRFTDtUWVBFPVdPUks6KzYzOTE3MTIzNDU2Nw0KRU1BSUw7VFlQRT1JTlRFUk5FVDpkci5tYXJpYXNhbnRvc0BlbWFpbC5jb20NCk5PVEU6Q2xpbmljOiBNb25cLCBXZWRcLCBGcmkgOSBBTSB0byAxMiBOTi4gQnkgYXBwb2ludG1lbnQuDQpFTkQ6VkNBUkQNCg==" download="doctor-contact.vcf"><i class="fa-solid fa-address-book" aria-hidden="true"></i> Save to contacts</a><nav class="actions" aria-label="Quick contact"><a href="tel:+639171234567"><i class="fa-solid fa-phone" aria-hidden="true"></i>Call</a><a href="sms:+639171234567"><i class="fa-solid fa-comment-sms" aria-hidden="true"></i>Text</a><a href="sms:+639171234567"><i class="fa-solid fa-calendar-check" aria-hidden="true"></i>Book</a><a href="https://www.google.com/maps/search/?api=1&query=Santiago%20City%2C%20Isabela" target="_blank" rel="noopener"><i class="fa-solid fa-location-dot" aria-hidden="true"></i>Directions</a></nav>
+<section>
+<h2>Clinic schedule</h2>
+<p class="lead">Consultations are by appointment. Text the secretary to book.</p>
+<div class="week">
+<div class="day on"><b>Mon</b><span>9 to 12</span></div>
+<div class="day"><b>Tue</b>Off</div>
+<div class="day on"><b>Wed</b><span>9 to 12</span></div>
+<div class="day on"><b>Thu</b><span>2 to 5</span></div>
+<div class="day on"><b>Fri</b><span>9 to 12</span></div>
+<div class="day"><b>Sat</b>Off</div>
+</div>
+<ul class="list box legend">
+<li><span>Mon, Wed, Fri mornings<small>Room 305, Medical Arts Building</small></span><span>9 AM to 12 NN</span></li>
+<li><span>Thursday afternoon<small>Outpatient Clinic, City Hospital</small></span><span>2 PM to 5 PM</span></li>
+</ul>
+</section>
+<section>
+<h2>What I treat</h2>
+<div class="tags"><span>Hypertension</span><span>Diabetes</span><span>Thyroid conditions</span><span>Annual check-ups</span><span>Pre-employment exams</span></div>
+</section>
+<section>
+<h2>Accepted HMOs</h2>
+<div class="tags"><span>Maxicare</span><span>Intellicare</span><span>MediCard</span><span>PhilHealth</span></div>
+</section>
+<section>
+<h2>Contact</h2>
+<ul class="contacts box"><li><a href="tel:+639171234567"><i class="fa-solid fa-phone" aria-hidden="true"></i><span>0917 123 4567<small>Clinic secretary</small></span></a></li><li><a href="mailto:dr.mariasantos@email.com"><i class="fa-solid fa-envelope" aria-hidden="true"></i><span>dr.mariasantos@email.com<small>Email</small></span></a></li><li><a href="https://facebook.com" target="_blank" rel="noopener"><i class="fa-brands fa-facebook" aria-hidden="true"></i><span>Dr. Maria Santos, MD<small>Facebook page</small></span></a></li></ul></section><section>
+<h2>Find us</h2>
+<p class="address">Room 305, Medical Arts Building, Santiago City</p>
+<iframe class="map" loading="lazy" title="Map" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=Santiago%20City%2C%20Isabela&z=14&output=embed"></iframe>
+<a class="directions" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Santiago%20City%2C%20Isabela">Get directions</a>
+</section><footer>
+<p style="margin:0 auto">This is a sample digital business card.</p>
+<span class="sample">Names and details are examples only</span>
+</footer>
+</div>
+</body>
+</html>

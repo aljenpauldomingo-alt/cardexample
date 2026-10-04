@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Smile Studio Dental Clinic</title>
+<meta name="description" content="Gentle care, brighter smiles. Services, prices, and booking.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<style>
+:root{--page:#F7FBFA;--card:#FFFFFF;--ink:#12443C;--head:#12443C;--muted:#4E6E68;--line:#D3E7E1;--accent:#2B8A78;--accent-ink:#1F7464;--btn:#1F7464;--btn-ink:#FFFFFF;--r:18px;--display:'Plus Jakarta Sans',system-ui,sans-serif;--display-w:800;--body:'Plus Jakarta Sans',system-ui,-apple-system,'Segoe UI',sans-serif}
+
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{font-family:var(--body);background:var(--page);color:var(--ink);line-height:1.55}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.wrap{max-width:480px;margin:0 auto;min-height:100vh;background:var(--page);padding-bottom:env(safe-area-inset-bottom,0px)}
+.save{display:flex;align-items:center;justify-content:center;gap:10px;margin:20px 20px 0;padding:16px;border-radius:var(--r);background:var(--btn);color:var(--btn-ink);text-decoration:none;font-weight:700;font-size:1.02rem}
+.actions{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;padding:12px 20px 0}
+.actions a{display:flex;flex-direction:column;align-items:center;gap:6px;padding:14px 2px 12px;background:var(--card);border:1px solid var(--line);border-radius:var(--r);text-decoration:none;font-size:.76rem;font-weight:600}
+.actions i{font-size:1.2rem;color:var(--accent-ink)}
+section{padding:36px 20px 0}
+h2{font-family:var(--display);font-weight:var(--display-w);font-size:1.55rem;line-height:1.15;margin-bottom:12px;color:var(--head)}
+.lead{color:var(--muted);margin:-4px 0 14px;font-size:.95rem}
+.box{background:var(--card);border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
+.list{list-style:none}
+.list li{display:flex;justify-content:space-between;gap:14px;padding:13px 16px;font-size:.95rem}
+.list li+li{border-top:1px solid var(--line)}
+.list li span:last-child{text-align:right;font-weight:600}
+.list small{display:block;color:var(--muted);font-size:.8rem;font-weight:400}
+.contacts{list-style:none}
+.contacts a{display:flex;align-items:center;gap:14px;padding:14px 16px;text-decoration:none}
+.contacts li+li{border-top:1px solid var(--line)}
+.contacts i{width:22px;text-align:center;font-size:1.1rem;color:var(--accent-ink)}
+.contacts small{display:block;color:var(--muted);font-size:.78rem}
+.map{width:100%;height:210px;border:0;border-radius:var(--r);background:var(--line);display:block}
+.directions{display:inline-block;margin-top:10px;font-weight:700;color:var(--accent-ink)}
+.address{margin-bottom:12px}
+.tags{display:flex;flex-wrap:wrap;gap:8px}
+.tags span{padding:7px 12px;border-radius:999px;background:var(--card);border:1px solid var(--line);font-size:.86rem;font-weight:600}
+footer{padding:40px 20px 30px;text-align:center;font-size:.8rem;color:var(--muted)}
+.sample{display:inline-block;margin-top:8px;padding:5px 12px;border-radius:999px;border:1px dashed var(--muted);font-weight:600}
+p{max-width:65ch}
+
+
+.hero{background:#E6F3EF;padding:calc(34px + env(safe-area-inset-top,0px)) 24px 30px;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;right:-70px;top:-70px;width:220px;height:220px;border-radius:50%;border:28px solid #fff;opacity:.7}
+.hero svg{position:relative;z-index:1}
+.hero h1{font-weight:800;font-size:2.3rem;line-height:1;letter-spacing:-.02em;margin-top:18px;position:relative;z-index:1}
+.hero .clinic{font-weight:600;color:#1F7464;margin-top:6px;position:relative;z-index:1}
+.hero .doc{margin-top:16px;font-weight:700;position:relative;z-index:1}
+.hero .doc small{display:block;font-weight:500;color:#4E6E68}
+.book{display:flex;align-items:center;justify-content:center;gap:10px;margin-top:14px;padding:16px;border-radius:18px;background:#E6F3EF;color:#12443C;text-decoration:none;font-weight:800;font-size:1.05rem;border:2px solid #1F7464}
+
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="hero">
+<svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#1F7464" stroke-width="1.5" stroke-linejoin="round" aria-hidden="true"><path d="M7.5 3.5c-2.4 0-4 1.9-4 4.4 0 2.2 1 3.6 1.6 5.4.7 2.2.9 7.2 2.9 7.2 1.8 0 1.7-4.8 4-4.8s2.2 4.8 4 4.8c2 0 2.2-5 2.9-7.2.6-1.8 1.6-3.2 1.6-5.4 0-2.5-1.6-4.4-4-4.4-1.7 0-2.7.9-4.5.9s-2.8-.9-4.5-.9z"></path></svg>
+<h1>Smile Studio</h1>
+<p class="clinic">Dental Clinic</p>
+<p class="doc">Dr. Paolo Reyes, DMD<small>General and cosmetic dentistry</small></p>
+</header>
+<a class="save" href="data:text/vcard;base64,QkVHSU46VkNBUkQNClZFUlNJT046My4wDQpOOlJleWVzO1Bhb2xvOzs7DQpGTjpEci4gUGFvbG8gUmV5ZXNcLCBETUQNCk9SRzpTbWlsZSBTdHVkaW8gRGVudGFsIENsaW5pYw0KVElUTEU6RGVudGlzdA0KVEVMO1RZUEU9V09SSzorNjM5MTcxMjM0NTY3DQpFTUFJTDtUWVBFPUlOVEVSTkVUOmhlbGxvQHNtaWxlc3R1ZGlvLmNvbQ0KTk9URTpNb24gdG8gRnJpIDkgQU0gdG8gNiBQTVwsIFNhdCA5IEFNIHRvIDMgUE0uDQpFTkQ6VkNBUkQNCg==" download="dentist-contact.vcf"><i class="fa-solid fa-address-book" aria-hidden="true"></i> Save to contacts</a><nav class="actions" aria-label="Quick contact"><a href="tel:+639171234567"><i class="fa-solid fa-phone" aria-hidden="true"></i>Call</a><a href="https://m.me/" target="_blank" rel="noopener"><i class="fa-brands fa-facebook-messenger" aria-hidden="true"></i>Messenger</a><a href="mailto:hello@smilestudio.com"><i class="fa-solid fa-envelope" aria-hidden="true"></i>Email</a><a href="https://www.google.com/maps/search/?api=1&query=Santiago%20City%2C%20Isabela" target="_blank" rel="noopener"><i class="fa-solid fa-location-dot" aria-hidden="true"></i>Directions</a></nav>
+<section>
+<h2>Services</h2>
+<p class="lead">Starting prices. Final cost depends on your check-up.</p>
+<ul class="list box">
+<li><span>Consultation and check-up</span><span>₱500</span></li>
+<li><span>Oral prophylaxis (cleaning)</span><span>from ₱800</span></li>
+<li><span>Tooth filling</span><span>from ₱1,000</span></li>
+<li><span>Tooth extraction</span><span>from ₱1,000</span></li>
+<li><span>Teeth whitening</span><span>from ₱8,000</span></li>
+<li><span>Braces<small>Downpayment, monthly adjustments</small></span><span>from ₱35,000</span></li>
+</ul>
+<a class="book" href="sms:+639171234567"><i class="fa-solid fa-calendar-check" aria-hidden="true"></i> Text us to book a visit</a>
+</section>
+<section>
+<h2>Clinic hours</h2>
+<ul class="list box">
+<li><span>Monday to Friday</span><span>9 AM to 6 PM</span></li>
+<li><span>Saturday</span><span>9 AM to 3 PM</span></li>
+<li><span>Sunday</span><span>Closed</span></li>
+</ul>
+</section>
+<section>
+<h2>We accept</h2>
+<div class="tags"><span>Maxicare</span><span>Intellicare</span><span>GCash</span><span>Cash</span></div>
+</section>
+<section>
+<h2>Contact</h2>
+<ul class="contacts box"><li><a href="tel:+639171234567"><i class="fa-solid fa-phone" aria-hidden="true"></i><span>0917 123 4567<small>Clinic</small></span></a></li><li><a href="mailto:hello@smilestudio.com"><i class="fa-solid fa-envelope" aria-hidden="true"></i><span>hello@smilestudio.com<small>Email</small></span></a></li><li><a href="https://facebook.com" target="_blank" rel="noopener"><i class="fa-brands fa-facebook" aria-hidden="true"></i><span>Smile Studio Dental Clinic<small>Facebook page</small></span></a></li><li><a href="https://instagram.com" target="_blank" rel="noopener"><i class="fa-brands fa-instagram" aria-hidden="true"></i><span>@smilestudio<small>Instagram</small></span></a></li></ul></section><section>
+<h2>Find us</h2>
+<p class="address">2F Main Street, Santiago City</p>
+<iframe class="map" loading="lazy" title="Map" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=Santiago%20City%2C%20Isabela&z=14&output=embed"></iframe>
+<a class="directions" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Santiago%20City%2C%20Isabela">Get directions</a>
+</section><footer>
+<p style="margin:0 auto">This is a sample digital business card.</p>
+<span class="sample">Names and details are examples only</span>
+</footer>
+</div>
+</body>
+</html>
